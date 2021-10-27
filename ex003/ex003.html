@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="formCadastro" onsubmit="return validarFormulario()" method="post">
+        <label for="nome">Informe o seu Nome do Time do coração</label>
+        <input type="text" name="Time">
+        <input type="submit" value="Enviar">
+    </form>
+    <script>
+        function validarFormulario() {
+            var Time = document.forms["formCadastro"] ["Time"].value;
+            if (Time =="") {
+                alert("favor informar o nome dp seu time!");
+                return false;
+            } else {
+                if (Time=="Bayern") {
+                    alert("Time do coração perfeito!");
+                    return true;
+                } else {
+                    alert("Coração de sofredor!");
+                    return true;
+                }
+            }
+        }
+    </script>
+</body>
+</html>
