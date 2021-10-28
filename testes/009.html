@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script>
+            function calcula (val)
+            {
+                if (val.oper[0].checked)val.res.value=val.val1.value-val.val2.valueif (val.oper[1].checked)
+                val.res.value=val.val1.value*val.val2.valueif (val.oper[2].checked)
+                val.res.value=val.val1.value/val.val2.valueif (val.oper[3].checked) 
+                val.res.value=parseInt(val.val1.value)+parseInt(val.val2.value)
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            Marque a Operação:<input type="radio" name="oper" value="sub"><br>
+            Subtração<input type="radio" name="oper" value="mul"><br>
+            Multiplicação<input type="radio" name="oper" value="div"><br>
+            Divisão<input type="radio" name="oper" value="adi"><br>
+            Adição<BR>
+            <p>Primeiro Número: <input type="text" size="10" name="val1"></p><p>Segundo Número: <input type="text" size="10" name="val2"></p><br><br><p><input type="button" name="Botao" value="CALCULAR" onClick="calcula(this.form)"><input type="text" size="20" name="res"></p>
+        </form>
+    </body>
+</html>

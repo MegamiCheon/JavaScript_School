@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>Teste004-JS</title>
+    <script language="javascript">
+        function quadrado(x)
+    {
+        document.write( x*x)
+    }   function cubo(x)
+    {
+        return x*x*x
+    }   Y=5
+        document.write("O quadrado de "+ Y +" é igual a ")
+        quadrado(Y)
+    </script>
+</head>
+<body>
+    <hr>
+    <FORM>Informe um número para saber o valor ao cubo correspondente e, em seguida, pressione a tecla TAB.
+    <INPUT TYPE="text" name="teste" Value=""onBlur="alert('O cubo de '+ this.value + ' é ' +cubo(this.value))">
+    </FORM>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>Teste007-JS</title>
+</head>
+<script language="JavaScript">
+        function campovital(x) 
+    {
+        if (x.value=="")
+    {
+        alert("O campo "+ x.name +" não pode ficar em branco")
+    }
+    }
+</script>
+<body>
+    <p>Nota: os campos marcados com asteriscos são obrigatórios.</p>
+    <form>
+        *Nome completo:<input type="text" name="Nome" value="" size=30 maxlength=30 onBlur="campovital(this)"><br>
+        Idade:<input type="text" name="Idade" value="" size=5 maxlength=5><br>
+        Cidade:<input type="text" name="Cidade" value="" size=20 maxlength=20><br>
+        *Telefone:<input type="text" name="Telefone" value="" size=15 maxlength=15 onBlur="campovital(this)">
+    </form>
+</body>
+</html>
