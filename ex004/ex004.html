@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>004</title>
+<link rel="stylesheet" href="ex004.css">
+<script language="JavaScript">
+ 
+function validaSobremesa() {
+
+if (document.form1.tipoSobremesa[0].checked == false 
+    && document.form1.tipoSobremesa[1].checked == false
+    && document.form1.tipoSobremesa[2].checked == false
+    && document.form1.tipoSobremesa[3].checked == false)
+{
+    alert('Por favor, selecione uma Maravilhosa Sobremesa.');
+    return false;
+}
+  else
+{
+    if (document.form1.tipoSobremesa[0].value==="Pudim")
+         alert('Salve salve o sr de Todos os Pudins');
+
+  return true;
+}
+}
+</script>
+</head>
+ 
+<body>
+
+<form name="form1" method="POST" onSubmit="return validaSobremesa();">
+<table>
+<tr><td colspan="2">Escolha uma Sobremesa:</td></tr>        
+<tr>
+   <td>Pudim Leite: <input name="tipoSobremesa" type="radio" value="Pudim"></td>
+   <td>Bolo: <input name="tipoSobremesa" type="radio" value="Bolo"></td>
+   <td>Gelatina: <input name="tipoSobremesa" type="radio" value="Gelatina"></td>
+   <td>Sorvete: <input name="tipoSobremesa" type="radio" value="Sorvete"></td>
+</tr>
+</table>
+<p><input type="submit" value="Enviar"></p>
+</form>
+</body>
+</html>
