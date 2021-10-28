@@ -1,0 +1,19 @@
+<!--4.CAIXA DE SELEÇÃO –IR PARA-->
+    <FORM><INPUT TYPE="hidden" NAME VALUE="Load"><SELECT NAME="menu" SIZE="1" ONCHANGE="load(this.form, window)"><OPTION VALUE="http://www.cade.com.br">Cadê?</OPTION><OPTION VALUE="http://www.google.com">Google</OPTION><OPTION VALUE="http://www.radaruol.com.br">RadarUol</OPTION></SELECT></FORM></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste013-JS</title>
+</head>
+<body bgcolor="#FF8080">
+    <SCRIPT LANGUAGE="JavaScript">
+    <function load(form, win) 
+    {
+        window.location.href = form.menu.options[form.menu.selectedIndex].value
+    }>
+    </SCRIPT>
+</body>
+</html>
