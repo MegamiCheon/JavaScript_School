@@ -9,24 +9,27 @@
 </head>
 <body>
 
-    1º Número Inteiro: <input type="number" id="It1"><br/>
-    2º Número Inteiro: <input type="number" id="It2"><br/>
-    3º Número Inteiro: <input type="number" id="It3"><br/>
-    4º Número Inteiro: <input type="number" id="It4"><br/>
-    5º Número Inteiro: <input type="number" id="It5"><br/>
-    <button onclick="number()">Enter</button>
-
 <script type="text/JavaScript">
+    var i, 
+    num, 
+    par = 0, 
+    impar = 0;            
 
-    function number() {
+    for(i = 1 ;i <= 5; i++) {
+        num = parseInt(prompt("Informe um numero["+i+"]:")); 
         
-        var It1 = parseInt(document.getElementById("It1").value)
-        var It2 = parseInt(document.getElementById("It2").value)
-        var It3 = parseInt(document.getElementById("It3").value)
-        var It4 = parseInt(document.getElementById("It4").value)
-        var It5 = parseInt(document.getElementById("It5").value)
-
+        if(num %2 == 0) { 
+            par += num;
+        } 
+        else { 
+            impar +=num;
+        }
     }
+    alert("Total de Números Pares Informados: "+par); 
+    alert("Total de Números Ímpares Informados: "+impar);
+
+    document.write(" <br> <h3> Total de Números Pares Informados :  " + par + "</h3>" );
+    document.write(" <br> <h3>Total de Números Ímpares Informados : " + impar + "</h3>");
 </script>
 </body>
 </html>
