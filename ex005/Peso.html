@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<form action="">
+
+    IMC = peso (em quilos) ÷ altura² (em metros)<br><br>
+
+    Informe sua altura: <input type="number" id="Alt"><br>
+    Informe sua idade: <input type="number" id="Birt"><br>
+    Informe seu peso: <input type="number" id="Ps"><br><br>
+    Informe seu sexo:<br>
+    Feminino: <input type="radio" name="sexo" id="Fem"> Masculino: <input type="radio" name="sexo" id="Mas">
+    <br><br>
+    <button onclick="peso()">Calcular</button>
+
+</form>
+    
+<script type="text/javascript">
+
+function peso() {
+    
+    var Alt = parseFloat(document.getElementById("Alt").value)
+    var Birt = parseFloat(document.getElementById("Birt").value)
+    var Ps = parseFloat(document.getElementById("Ps").value)
+    var Fem = parseFloat(document.getElementById("Fem").value)
+    var Mas = parseFloat(document.getElementById("Mas").value)
+
+    var IMC = Ps / Alt**
+
+    
+}
+
+</script>
+</body>
+</html>

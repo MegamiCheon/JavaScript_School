@@ -20,12 +20,9 @@ function SL() {
     var HM = parseFloat(document.getElementById('HM').value)
     var PH = parseFloat(document.getElementById('PH').value)
 
-    var SL = PH * HM
+    var SL = PH * HM;
 
-    if (SL>=1) {
-        
-    alert('Seu salário é' +SL)
-    }
+    document.write('Seu salário será: R$' +SL)
 }
 
 </script>
