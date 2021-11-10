@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>005 - Salário</title>
+</head>
+<body>
+    <center>
+    Informe quantas horas você trabalha no mês: <input type="number" id="HM"><br/><br/>
+    Informe o quanto ganha por hora: <input type="number" id="PH"><br/><br/>
+    <button onclick="SL()">Calcular</button>
+    </center>
+
+
+<script type="text/JavaScript">
+function SL() {
+
+    var HM = parseFloat(document.getElementById('HM').value)
+    var PH = parseFloat(document.getElementById('PH').value)
+
+    var SL = PH * HM
+
+    if (SL>=1) {
+        
+    alert('Seu salário é' +SL)
+    }
+}
+
+</script>
+</body>
+</html>
