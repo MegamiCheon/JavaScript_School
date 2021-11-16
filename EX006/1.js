@@ -1,7 +1,5 @@
 // Laiz Detros
 
-001
-
 var map = {
 
     tile_size: 16,
